@@ -1,0 +1,25 @@
+{
+  "name": "software_and_data_security_systems_lab4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "cd src && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimakryshtal/software_and_data_security_systems_lab4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimakryshtal/software_and_data_security_systems_lab4/issues"
+  },
+  "homepage": "https://github.com/dimakryshtal/software_and_data_security_systems_lab4#readme",
+  "dependencies": {
+    "big-integer": "^1.6.51",
+    "crypto": "^1.0.1",
+    "node-forge": "^0.10.0"
+  }
+}
