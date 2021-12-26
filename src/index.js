@@ -11,5 +11,13 @@ const primeQ = generetaLargeNumbeRabin(min32digitNum, max32digitNum)
 const keys = findKeys(primeQ)
 
 const signature = generateSignature(fileContent, keys.privateKey)   //generated signature
-verifySignature(fileContent, [1, 9], keys.publicKey)    //wrong signature
+
+console.log(`Private key: ${keys.privateKey}`)
+console.log(`Public key: ${keys.publicKey}`)
+console.log(`Signature: ${signature}`)
+
+const wrongPublicKey = [...keys.publicKey];
+wrongPublicKey[0] = BigInt(24671287643217)
+
+verifySignature(fileContent, signature, wrongPublicKey)    //wrong signature
 verifySignature(fileContent, signature, keys.publicKey)     //right signature
